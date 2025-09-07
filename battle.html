@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battle</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <div class="battle-container">
+  <!-- Player Panels -->
+  <div class="player-panel left">
+    <h3>Player 1</h3>
+    <p class="score">Score: 0</p>
+  </div>
+  <div class="player-panel right">
+    <h3>Player 2</h3>
+    <p class="score">Score: 0</p>
+  </div>
+  
+  <!-- Battle Question Area -->
+  <div class="battle-question-area">
+    <div class="timer">Time Left: <span id="timer">15</span>s</div>
+    <h2 id="question-text">Which practice leads directly to deforestation?</h2>
+    <div class="options">
+      <button class="option">(A) Reforestation</button>
+      <button class="option">(B) Selective logging</button>
+      <button class="option">(C) Urban sprawl</button>
+      <button class="option">(D) Sustainable farming</button>
+    </div>
+    <div class="result-msg"></div>
+  </div>
+</div>
+
+</body>
+<script src="js/battle.js"></script>
+</html>

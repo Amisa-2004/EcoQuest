@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoBuilder</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="ecobuilder-container">
+  <h2>EcoBuilder: Make Your Swing</h2>
+  <p>Drag your collected items to the build area to construct a swing!</p>
+  
+  <div class="toolbox">
+    <!-- Draggable resources go here. Images should be available in the project directory. -->
+    <img src="assets/rope.png" alt="Rope" class="draggable-item" draggable="true" id="item-rope">
+    <img src="assets/tyre.png" alt="Old Tire" class="draggable-item" draggable="true" id="item-tire">
+  </div>
+  
+  <div class="build-area" id="build-area">
+    <span>Drop items here to build your swing</span>
+  </div>
+  
+  <div id="build-result"></div>
+</div>
+
+</body>
+<script src="js/ecobuilder.js"></script>
+</html>

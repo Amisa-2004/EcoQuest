@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <div class="quiz-container">
+  <h2>Waste Management Quiz</h2>
+  <div id="quiz-question-area">
+    <!-- JS dynamically injects question/answers here -->
+  </div>
+  <div id="quiz-feedback"></div>
+  <button id="next-btn" style="display: none;">Next</button>
+  <div id="quiz-reward" style="display: none;">
+    <h3>Congratulations!</h3>
+    <p>You've earned a special eco-reward:</p>
+    <div class="reward-visual">
+      <img src="assets/rope.png" alt="rope" class="reward-img">
+      <img src="assets/tyre.png" alt="tyre" class="reward-img">
+      <p>Rope + Old Tire = Swing (unlocked in EcoBuilder)</p>
+    </div>
+  </div>
+</div>
+
+</body>
+<script src="js/quiz.js"></script>
+</html>
