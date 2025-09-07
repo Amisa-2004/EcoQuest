@@ -1,0 +1,306 @@
+
+body{
+    background: linear-gradient(90deg, #bbf7d0, #86efac, #4ade80);
+    min-height: 100vh;
+    position: relative;
+}
+
+.grass{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.tree-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.tree-img {
+  height: 300px;
+  width: auto;
+  transition: all 0.5s ease-in-out;
+}
+
+
+.icon{
+    height: 64px;
+    width: 64px;
+}
+
+.navbar{
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    gap: 15%;
+}
+
+.map-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.map-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; 
+}
+
+.map-marker {
+  position: absolute;
+  top: 10%;   /* Adjust this to the vertical position of Chapter 1 */
+  left: 0%;  /* Adjust this to the horizontal position of Chapter 1 */
+  pointer-events: none; /* So it doesn't interfere with map interactions */
+}
+
+.start-button-container {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 20;
+    text-align: center;
+}
+
+.ecoquest-button {
+    background: linear-gradient(145deg, #4CAF50, #388E3C); 
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-family: 'Trebuchet MS', sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Hover effect */
+.ecoquest-button:hover {
+    background: linear-gradient(145deg, #66BB6A, #43A047);
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.35);
+}
+
+.leaderboard-table {
+  width: 80%;
+  margin: 2rem auto;
+  border-collapse: collapse;
+  font-size: 1rem;
+  background: #fff;
+  box-shadow: 0 0 10px #A7F3D0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.leaderboard-table th, .leaderboard-table td {
+  padding: 10px 16px;
+  border-bottom: 1px solid #D1FAE5;
+  text-align: center;
+}
+.leaderboard-table .current-user {
+  background: #bbf7d0;
+  font-weight: bold;
+}
+
+.profile-card {
+  width: 350px;
+  margin: 2rem auto;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 0 12px #A7F3D0;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-img-container {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 16px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 4px solid #86efac;
+  background: #bbf7d0;
+}
+
+.profile-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-details h2 {
+  margin-bottom: 6px;
+}
+
+.badges-section {
+  width: 350px;
+  margin: 1.5rem auto;
+  background: #f6fdf6;
+  border-radius: 14px;
+  padding: 16px;
+  text-align: center;
+}
+
+.badges-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 10px;
+}
+
+.badge {
+  width: 64px;
+  height: 64px;
+  border-radius: 8px;
+  background: #e3fadf;
+  padding: 5px;
+  box-shadow: 0 1px 6px #b5f5d0;
+}
+
+.battle-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 2rem auto;
+  max-width: 700px;
+  background: #f6fdf6;
+  border-radius: 20px;
+  box-shadow: 0 0 16px #A7F3D0;
+  padding: 30px;
+  position: relative;
+}
+
+.player-panel {
+  width: 130px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.battle-question-area {
+  flex-grow: 1;
+  margin: 0 32px;
+  text-align: center;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 18px;
+}
+
+.option {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  background: #bbf7d0;
+  color: #14532D;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.option:hover {
+  background: #86efac;
+  transform: scale(1.04);
+}
+
+.timer {
+  font-size: 1.1rem;
+  color: #065F46;
+  margin-bottom: 12px;
+  font-weight: bold;
+}
+
+.result-msg {
+  margin-top: 18px;
+  font-size: 1.05rem;
+  font-weight: bold;
+  color: #059669;
+}
+
+.quiz-container {
+  max-width: 400px;
+  margin: 2.5rem auto;
+  padding: 22px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 0 16px #A7F3D0;
+  text-align: center;
+}
+.opts { display: flex; flex-direction: column; gap: 10px; margin-top: 14px;}
+.qopt {
+  padding: 10px 0;
+  background: #bbf7d0;
+  border: none;
+  border-radius: 7px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.qopt:hover:not(:disabled) { background: #86efac;}
+.reward-visual { margin-top: 18px; }
+.reward-img {
+  width: 95px;
+  border-radius: 12px;
+  border: 2px solid #86efac;
+  margin-bottom: 8px;
+}
+
+.ecobuilder-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 24px;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 0 20px #A7F3D0;
+  text-align: center;
+}
+.toolbox {
+  display: flex;
+  gap: 26px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.draggable-item {
+  width: 64px;
+  height: 64px;
+  cursor: grab;
+  border: 2px solid #86efac;
+  border-radius: 8px;
+  transition: border 0.2s;
+}
+.draggable-item:active {
+  border: 2px solid #22c55e;
+}
+.build-area {
+  min-height: 150px;
+  background: #f6fdf6;
+  border: 2px dashed #4ade80;
+  border-radius: 12px;
+  margin: 26px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  color: #10b981;
+}
+#build-result {
+  margin-top: 18px;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
