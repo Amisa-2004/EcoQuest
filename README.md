@@ -1,1 +1,1 @@
-SIH projrct prototype
+SIH project prototype
